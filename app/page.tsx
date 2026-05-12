@@ -38,14 +38,15 @@ export default function Home() {
   }, [basicSalary, serviceYear, benefitDays]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-950 flex items-center justify-center p-4">
+    // <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-950 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-950 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8">
         <div className="text-center mb-8">
           <div className="titleWrapper">
             <div className="logo items-center justify-center flex">
               <img width={50} height={50} src="/MascoLogo.png" alt="logo" />
             </div>
-            <h1  className="text-3xl font-bold text-white">
+            <h1 className="text-3xl font-bold text-white">
               Service Benefit Calculator
             </h1>
           </div>
@@ -118,7 +119,7 @@ export default function Home() {
 
               <div className="bg-white/10 rounded-xl p-3 text-center">
                 <p className="text-slate-300 text-sm">Above 3 & Below 10 Years</p>
-                
+
                 <p className="text-white text-xl font-bold">15 Days</p>
               </div>
 
@@ -161,7 +162,9 @@ export default function Home() {
         </div>
 
       </div>
-
+      <footer className="mt-auto py-4 text-center text-slate-400 text-sm">
+        Developed by <span className="text-white font-semibold">Binayak Ray,</span> Sr. Executive(MIS)
+      </footer>
     </div>
   );
 }
