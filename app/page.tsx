@@ -56,7 +56,7 @@ export default function Home() {
         <div className="space-y-4">
           <div>
             <label className="text-white text-sm mb-2 block">
-              Total Salary
+              Monthly Gross Salary
             </label>
 
             <input
