@@ -105,26 +105,18 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-950 flex items-center justify-center p-4">
       <div className="w-full max-w-xl backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8">
         <div className="text-center mb-8">
-          {/* <h1 className="text-4xl font-bold text-white">
-            Service Benefit Calculator
-          </h1> */}
           <div className="titleWrapper">
-
-            <div className="logo">
-              💼
+            <div className="logo items-center justify-center flex">
+              <img width={50} height={50} src="/MascoLogo.png" alt="logo" />
             </div>
-
             <h1  className="text-3xl font-bold text-white">
               Service Benefit Calculator
             </h1>
-
           </div>
-
           <p className="text-slate-300 mt-2">
             Calculate employee service benefits instantly
           </p>
         </div>
-
         <div className="space-y-4">
           <div>
             <label className="text-white text-sm mb-2 block">
@@ -202,13 +194,13 @@ export default function Home() {
           </div>
 
           {/* Result */}
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-6 text-center shadow-xl">
+          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-4 text-center shadow-xl">
 
             <p className="text-white/80 text-sm mb-2">
               Total Service Benefit
             </p>
 
-            <h2 className="text-5xl font-bold text-white">
+            <h2 className="text-4xl font-bold text-white">
               ৳ {totalBenefit}
             </h2>
 
